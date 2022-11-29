@@ -1,0 +1,7 @@
+result=[0,'']
+with open('data.txt','r') as fp:	
+	for line in fp:
+		t=len(line)
+		if t>result[0]:
+			result=[t,line]
+print(result)
